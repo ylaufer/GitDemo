@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+    <test verbose="2" preserve-order="true" name="Personal Loan">
+        <classes>
+            <class name="testNG.testNG1HomeLoan">
+                <methods>
+                    <include name="TestMethod1"/>
+                    <exclude name="TestMethod2"/>
+                    <exclude name="Mobile.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="12" passed="8" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-08-14T14:45:41Z" name="BDD Test Suite" finished-at="2019-08-14T14:45:52Z" duration-ms="11249">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:testNG.CucumberRunner@3b2da18f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+      <group name="smoke">
+        <method signature="testNGCarLoan.TryingAgain()[pri:0, instance:testNG.testNGCarLoan@5906ebcb]" name="TryingAgain" class="testNG.testNGCarLoan"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2019-08-14T14:45:41Z" name="Regression" finished-at="2019-08-14T14:45:52Z" duration-ms="11249">
+      <class name="testNG.CucumberRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testNG.CucumberRunner@3b2da18f]" started-at="2019-08-14T14:45:41Z" name="setUpClass" finished-at="2019-08-14T14:45:41Z" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:testNG.CucumberRunner@3b2da18f]" started-at="2019-08-14T14:45:41Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-14T14:45:41Z" duration-ms="137" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Do create systems user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["create Systems user"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[There are undefined steps]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: There are undefined steps
+at io.cucumber.testng.TestCaseResultListener.getError(TestCaseResultListener.java:60)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:73)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:testNG.CucumberRunner@3b2da18f]" started-at="2019-08-14T14:45:41Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-14T14:45:48Z" duration-ms="6544" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Do login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login to Interviews"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EN1710017', ip: '172.19.187.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\Ylaufer\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52796}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 47893289de18c57e09d4564d1f323072
+*** Element info: {Using=id, value=exampleInputEmail1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EN1710017', ip: '172.19.187.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\Ylaufer\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52796}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 47893289de18c57e09d4564d1f323072
+*** Element info: {Using=id, value=exampleInputEmail1}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at Steps.Login.I_enter_username(Login.java:26)
+at ✽.I enter username "rrhh@endava.com"(file:src/test/Features/Login.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:testNG.CucumberRunner@3b2da18f]" started-at="2019-08-14T14:45:48Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-08-14T14:45:52Z" duration-ms="4106" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Do not login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login to Interviews"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EN1710017', ip: '172.19.187.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\Ylaufer\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 68230589f59dbcc6bf0c8c9db9ae0b48
+*** Element info: {Using=id, value=exampleInputEmail1}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EN1710017', ip: '172.19.187.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\Ylaufer\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52831}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 68230589f59dbcc6bf0c8c9db9ae0b48
+*** Element info: {Using=id, value=exampleInputEmail1}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at Steps.Login.I_enter_username(Login.java:26)
+at ✽.I enter username "rrhh@endava.com"(file:src/test/Features/Login.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testNG.CucumberRunner@3b2da18f]" started-at="2019-08-14T14:45:52Z" name="tearDownClass" finished-at="2019-08-14T14:45:52Z" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testNG.CucumberRunner -->
+      <class name="testNG.testNG1HomeLoan">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:41Z" name="BeforeSuite" finished-at="2019-08-14T14:45:41Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="Prerequisites()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:41Z" name="Prerequisites" finished-at="2019-08-14T14:45:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Prerequisites -->
+        <test-method is-config="true" signature="beforeCla()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="beforeCla" finished-at="2019-08-14T14:45:52Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeCla -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="beforeMeth" finished-at="2019-08-14T14:45:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method signature="Mobile1()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="Mobile1" finished-at="2019-08-14T14:45:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mobile1 -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="beforeMeth" finished-at="2019-08-14T14:45:52Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method signature="Mobile2()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="Mobile2" finished-at="2019-08-14T14:45:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mobile2 -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="beforeMeth" finished-at="2019-08-14T14:45:52Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method signature="TestMethod1()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="TestMethod1" finished-at="2019-08-14T14:45:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod1 -->
+        <test-method signature="TestMethod2()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="TestMethod2" finished-at="2019-08-14T14:45:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestMethod2 -->
+        <test-method is-config="true" signature="beforeMeth()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="beforeMeth" finished-at="2019-08-14T14:45:52Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMeth -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="afterClass" finished-at="2019-08-14T14:45:52Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="EndTest()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="EndTest" finished-at="2019-08-14T14:45:52Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndTest -->
+        <test-method is-config="true" signature="AfterSuite()[pri:0, instance:testNG.testNG1HomeLoan@6b419da]" started-at="2019-08-14T14:45:52Z" name="AfterSuite" finished-at="2019-08-14T14:45:52Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- testNG.testNG1HomeLoan -->
+      <class name="testNG.testNGCarLoan">
+        <test-method signature="hello()[pri:0, instance:testNG.testNGCarLoan@5906ebcb]" started-at="2019-08-14T14:45:52Z" name="hello" finished-at="2019-08-14T14:45:52Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hello -->
+        <test-method signature="TryingAgain()[pri:0, instance:testNG.testNGCarLoan@5906ebcb]" started-at="2019-08-14T14:45:52Z" name="TryingAgain" finished-at="2019-08-14T14:45:52Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TryingAgain -->
+        <test-method signature="timeout()[pri:0, instance:testNG.testNGCarLoan@5906ebcb]" started-at="2019-08-14T14:45:52Z" name="timeout" finished-at="2019-08-14T14:45:52Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timeout -->
+        <test-method signature="Second()[pri:0, instance:testNG.testNGCarLoan@5906ebcb]" started-at="2019-08-14T14:45:52Z" name="Second" finished-at="2019-08-14T14:45:52Z" depends-on-methods="testNG.testNGCarLoan.hello, testNG.testNGCarLoan.TryingAgain" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Second -->
+      </class> <!-- testNG.testNGCarLoan -->
+    </test> <!-- Regression -->
+  </suite> <!-- BDD Test Suite -->
+</testng-results>
